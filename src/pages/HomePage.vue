@@ -2,6 +2,7 @@
 import Header from '../components/Header/Header.vue'
 import HeroSection from '../components/HomePage/HeroSection.vue'
 import HeroTrailers from '../components/HomePage/HeroTrailers.vue'
+import Footer from '../components/Footer/Footer.vue'
 </script>
 
 <template>
@@ -14,6 +15,6 @@ import HeroTrailers from '../components/HomePage/HeroTrailers.vue'
 
     <HeroTrailers />
 
-<div class="h-[30vh]"></div>
+    <Footer />
   </div>
 </template>

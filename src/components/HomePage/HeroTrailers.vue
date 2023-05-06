@@ -2,23 +2,27 @@
 import Trailer from '../../assets/media/hasbro02.mp4'
 import { ref } from 'vue'
 
-const muted = ref(false)
-const volume = ref()
+interface InputFileEvent extends Event {
+  target: HTMLInputElement
+}
+
+const muted = ref(true)
+const volume = ref(0.5)
 
 function unmuted() {
-  console.log(muted)
+  // console.log(muted)
   muted.value = !muted.value
 }
 
-function testevolume(event: any) {
-  volume.value = event.target.value
-  console.log(volume.value)
+function changeVolume(event: InputFileEvent) {
+  volume.value = +event.target.value
+  // console.log(volume.value)
 }
 </script>
 
 <template>
   <div
-    class="w-full h-auto flex justify-center"
+    class="w-full h-auto flex justify-center mb-5"
     v-motion
     :initial="{
       opacity: 0,
@@ -60,7 +64,7 @@ function testevolume(event: any) {
           min="0"
           :value="volume"
           step="0.1"
-          @change="testevolume($event)"
+          @change="changeVolume($event as InputFileEvent)"
         />
       </div>
     </div>
