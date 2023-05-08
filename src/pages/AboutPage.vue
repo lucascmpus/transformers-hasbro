@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import Header from '../components/Header/Header.vue'
 import Footer from '../components/Footer/Footer.vue'
+
+function sendMail() {
+  alert('ok')
+}
 </script>
 
 <template>
@@ -10,6 +14,18 @@ import Footer from '../components/Footer/Footer.vue'
     <Header />
 
     <div
+      v-motion
+      :initial="{
+        opacity: 0,
+        x: -100,
+      }"
+      :enter="{
+        opacity: 1,
+        x: 0,
+        transition: {
+          delay: 700,
+        },
+      }"
       class="flex-col rounded-xl bg-cyan-950 w-[calc(100vw-50px)] h-auto flex justify-between items-center p-5 mb-5"
     >
       <div
@@ -37,47 +53,63 @@ import Footer from '../components/Footer/Footer.vue'
     </div>
 
     <div
-      class="flex-col rounded-xl bg-zinc-700 w-[calc(100vw-50px)] h-auto flex justify-between items-center p-5"
+      v-motion
+      :initial="{
+        opacity: 0,
+        x: 100,
+      }"
+      :enter="{
+        opacity: 1,
+        x: 0,
+        transition: {
+          delay: 1000,
+        },
+      }"
+      class="rounded-xl bg-[url('src/assets/about-.jpg')] bg-cover w-[calc(100vw-50px)] h-auto flex items-center justify-center p-5 text-white"
     >
-      <form action="">
-        <p class="text-center text-xl mb-4">Entre em contato</p>
+      <div class="w-full px-5 lg:px-3 max-w-4xl lg:max-w-7xl flex justify-center items-center ">
 
-        <div class="flex flex-col">
-          <label for="name">Nome Completo</label>
-          <input
-            class="text-black px-2 py-1 rounded-md outline-none"
-            id="name"
-            type="text"
-            required
-          />
-        </div>
+        <!-- FORM -->
+        <form @submit="sendMail">
+          <p class="text-center text-xl mb-4">Entre em contato</p>
 
-        <div class="flex flex-col my-2">
-          <label for="email">Email</label>
-          <input
-            class="text-black px-2 py-1 rounded-md outline-none"
-            id="email"
-            type="email"
-            required
-          />
-        </div>
+          <div class="flex flex-col">
+            <label for="name">Nome Completo</label>
+            <input
+              class="text-black px-2 py-1 rounded-md outline-none"
+              id="name"
+              type="text"
+              required
+            />
+          </div>
 
-        <div class="flex flex-col">
-          <label for="mensagem">Mensagem</label>
-          <textarea
-            class="text-black px-2 py-1 rounded-md outline-none"
-            required
-            name=""
-            id="mensagem"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
+          <div class="flex flex-col my-2">
+            <label for="email">Email</label>
+            <input
+              class="text-black px-2 py-1 rounded-md outline-none"
+              id="email"
+              type="email"
+              required
+            />
+          </div>
 
-        <button class="w-full py-2 bg-cyan-600 mt-3 rounded-md" type="submit">
-          Enviar
-        </button>
-      </form>
+          <div class="flex flex-col">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              class="text-black px-2 py-1 rounded-md outline-none"
+              required
+              name=""
+              id="mensagem"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button class="w-full py-2 bg-cyan-600 mt-3 rounded-md text-white" type="submit">
+            Enviar
+          </button>
+        </form>
+      </div>
     </div>
 
     <div class="w-[calc(100vw-50px)] mt-5">

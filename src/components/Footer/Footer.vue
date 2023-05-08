@@ -8,7 +8,7 @@
       © 2023 Copyright:
       <a
         class="text-neutral-800 dark:text-neutral-400"
-        href="https://shop.hasbro.com/pt-br"
+        href="https://shop.hasbro.com"
         >Hasbro</a
       >
     </div>
