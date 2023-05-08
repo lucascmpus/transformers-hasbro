@@ -21,7 +21,7 @@ function toTop() {
     @click="toTop"
     v-show="show"
     id="back-to-top"
-    class="fixed bg-cyan-900 p-1 rounded-xl bottom-4 right-4"
+    class="fixed bg-cyan-900 p-1 rounded-xl bottom-4 right-4 z-10"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
