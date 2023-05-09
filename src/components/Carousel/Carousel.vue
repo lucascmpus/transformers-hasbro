@@ -11,7 +11,7 @@ function prevImage() {
 }
 </script>
 <template>
-  <div class="relative w-full max-w-7xl h-[350px] overflow-hidden">
+  <div class="relative w-full max-w-7xl md:h-[350px] overflow-hidden">
     <slot></slot>
 
     <!-- Next BTN -->
