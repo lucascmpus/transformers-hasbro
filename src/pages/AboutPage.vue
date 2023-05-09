@@ -65,10 +65,11 @@ function sendMail() {
           delay: 1000,
         },
       }"
-      class="rounded-xl bg-[url('src/assets/about-.jpg')] bg-cover w-[calc(100vw-50px)] h-auto flex items-center justify-center p-5 text-white"
+      class="rounded-xl bg-[url('src/assets/about-.jpg')] bg-cover w-[calc(100vw-50px)] h-auto flex items-center justify-center p-5 text-white mb-5"
     >
-      <div class="w-full px-5 lg:px-3 max-w-4xl lg:max-w-7xl flex justify-center items-center ">
-
+      <div
+        class="w-full px-5 lg:px-3 max-w-4xl lg:max-w-7xl flex justify-center items-center"
+      >
         <!-- FORM -->
         <form @submit="sendMail">
           <p class="text-center text-xl mb-4">Entre em contato</p>
@@ -105,10 +106,35 @@ function sendMail() {
             ></textarea>
           </div>
 
-          <button class="w-full py-2 bg-cyan-600 mt-3 rounded-md text-white" type="submit">
+          <button
+            class="w-full py-2 bg-cyan-600 mt-3 rounded-md text-white"
+            type="submit"
+          >
             Enviar
           </button>
         </form>
+      </div>
+    </div>
+
+    <div
+      v-motion
+      :initial="{
+        opacity: 0,
+        x: 100,
+      }"
+      :enter="{
+        opacity: 1,
+        x: 0,
+        transition: {
+          delay: 1000,
+        },
+      }"
+      class="rounded-xl bg-[url('src/assets/cinema.jpg')] bg-cover w-[calc(100vw-50px)] h-auto flex items-center justify-center p-5 text-white"
+    >
+      <div
+        class="w-full px-5 lg:px-3 max-w-4xl lg:max-w-7xl flex justify-center items-center"
+      >
+        Salas de cinemas disponiveis
       </div>
     </div>
 
