@@ -47,7 +47,7 @@ function changeVolume(event: InputFileEvent) {
         </h1>
       </div>
 
-      <video class="rounded-sm" :muted="muted" loop autoplay :volume="volume">
+      <video class="rounded-md" :muted="muted" loop autoplay :volume="volume">
         <source :src="Trailer" />
       </video>
 
