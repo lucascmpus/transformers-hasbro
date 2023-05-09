@@ -119,17 +119,17 @@ function prev() {
 
           <div class="flex flex-col gap-4 lg:w-2/4">
             <div>
-              <span class="text-cyan-600 font-semibold">Special Sneaker</span>
+              <span class="text-cyan-600 font-semibold">Edição especial</span>
               <h1 class="text-3xl font-bold">
                 Boneco Transformers: A Era da Extinção
               </h1>
             </div>
             <p class="text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              incidunt facere doloribus repudiandae nemo soluta voluptas in
-              magnam, accusamus atque. Qui deleniti aliquam consectetur error
-              pariatur. Excepturi error non ex. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Repellendus, sunt.
+              As figuras de 16,5 cm da classe voyager são inspiradas em cenas
+              famosas do filme e possuem detalhes que refletem o universo
+              cinematográfico de Transformers, agora incluindo Transformers: O
+              Filme. Design inspirado pelo filme e inclui lança-foguetes e
+              canhão. A figura possui diversas articulações
             </p>
             <div class="flex flex-row items-center justify-end">
               <button
