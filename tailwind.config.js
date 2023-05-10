@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        teste: "url('./src/assets/transformers-2.png')",
+        teste: "url('./assets/transformers-2.png')",
+        cinema: "url('./assets/cinema.jpg')"
       },
       fontFamily: {
         transformers: ['Transformers'],

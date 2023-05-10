@@ -65,7 +65,7 @@ function sendMail() {
           delay: 1000,
         },
       }"
-      class="rounded-xl bg-[url('src/assets/about-.jpg')] bg-cover w-[calc(100vw-50px)] h-auto flex items-center justify-center  text-white mb-5"
+      class="rounded-xl bg-[url('./assets/about-.jpg')] bg-cover w-[calc(100vw-50px)] h-auto flex items-center justify-center  text-white mb-5"
     >
       <div
         class="w-full px-5 lg:px-3 max-w-4xl lg:max-w-7xl flex justify-center items-center py-5 backdrop-blur-[2px]"
@@ -129,7 +129,7 @@ function sendMail() {
           delay: 1500,
         },
       }"
-      class="rounded-xl bg-[url('src/assets/cinema.jpg')] bg-center bg-cover w-[calc(100vw-50px)] h-auto flex justify-center text-white"
+      class="rounded-xl bg-cinema bg-center bg-cover w-[calc(100vw-50px)] h-auto flex justify-center text-white"
     >
       <div
         class="w-full px-5 lg:px-3 max-w-4xl lg:max-w-7xl flex justify-center items-center flex-col backdrop-blur-[2px] h-full p-5"
